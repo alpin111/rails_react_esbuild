@@ -8,13 +8,13 @@ rails new -j esbuild rails_react_esbuild
 cd rails_react_esbuild
 ```
 
-Gemfile add:
+Add to Gemfile:
 ```
 gem 'jsbundling-rails'
 gem 'foreman'
 ```
 
-Run 
+Bundle install & node packages & controller
 ```
 ./bin/bundle install
 ./bin/rails javascript:install:esbuild
@@ -29,17 +29,15 @@ app/views/root/index.html.erb:
 ```
 <div id="root">
 ```
-config/routes.rb:
 
+config/routes.rb:
 ```
 Rails.application.routes.draw do
   root 'root#index'
 end
 ```
 
-
 app/javascript/application.js:
-
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
