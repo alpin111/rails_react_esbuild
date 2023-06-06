@@ -1,4 +1,4 @@
-# rails with React and esbuild
+# Ruby on Rails + React + esbuild
 Setup for Ruby on Rails with React &amp; esbuild
 
 
