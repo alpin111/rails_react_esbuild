@@ -25,7 +25,7 @@ yarn add esbuild esbuild-loader --dev
 rails g controller Root index
 ```
 
-Overwrite app/views/root/index.html.erb with:
+app/views/root/index.html.erb:
 ```
 <div id="root">
 ```
@@ -55,14 +55,14 @@ ReactDOM.render(
 ```
 
 
-Add --loader:.js=jsx to the build script in your package.json at the very end:
+Add `--loader:.js=jsx` to the build script in your package.json at the very end:
 ```
  "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --loader:.js=jsx"
   },
 ```
 
-Start with:
+Start:
 ```
 ./bin/dev
 ```
